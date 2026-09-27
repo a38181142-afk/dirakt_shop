@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог — Мужская одежда</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAV BAR -->
+    <header class="wb-header">
+        <div class="wb-container header-flex">
+            <a href="index.html" class="wb-logo">WILDBERRIES <span class="badge-dark">DARK</span></a>
+            <div class="wb-search-bar">
+                <input type="text" placeholder="Поиск в каталоге...">
+                <span class="search-icon">🔍</span>
+            </div>
+            <nav class="wb-user-menu">
+                <a href="catalog.html" class="cart-link">Каталог</a>
+                <span>Войти</span>
+                <span class="cart-link">Корзина <span class="cart-count">0</span></span>
+            </nav>
+        </div>
+    </header>
+
+    <div class="wb-container catalog-layout section-pad">
+        <!-- Sidebar Filters -->
+        <aside class="sidebar-filters">
+            <h3>ФИЛЬТРЫ</h3>
+            <div class="filter-group">
+                <h4>Категория</h4>
+                <label class="check-container">Все вещи <input type="checkbox" checked><span class="checkmark"></span></label>
+                <label class="check-container">Худи <input type="checkbox"><span class="checkmark"></span></label>
+                <label class="check-container">Джоггеры <input type="checkbox"><span class="checkmark"></span></label>
+            </div>
+            <div class="filter-group">
+                <h4>Цвет</h4>
+                <label class="check-container">Глубокий черный <input type="checkbox" checked><span class="checkmark"></span></label>
+                <label class="check-container">Пламенный красный <input type="checkbox"><span class="checkmark"></span></label>
+            </div>
+        </aside>
+
+        <!-- Product Grid -->
+        <main>
+            <h1 class="page-title">МУЖСКАЯ ОДЕЖДА <span class="text-light">(2)</span></h1>
+            
+            <div class="products-grid">
+                <!-- Карта 1 (Ведет на нашу третью страницу) -->
+                <div class="item-card">
+                    <a href="product.html" class="item-img-link">
+                        <div class="item-img-stub">🔥 REBEL HOODIE</div>
+                    </a>
+                    <div class="item-details">
+                        <div class="item-price">4 200 ₽ <span class="old-inline">12 500 ₽</span></div>
+                        <div class="item-brand">ALPHA WEAR</div>
+                        <div class="item-name">Худи мужское оверсайз черное</div>
+                        <a href="product.html" class="btn-card-go">Открыть карточку</a>
+                    </div>
+                </div>
+
+                <!-- Карта 2 -->
+                <div class="item-card">
+                    <a href="product.html" class="item-img-link">
+                        <div class="item-img-stub">🔥 CARGO PANTS</div>
+                    </a>
+                    <div class="item-details">
+                        <div class="item-price">3 800 ₽ <span class="old-inline">9 000 ₽</span></div>
+                        <div class="item-brand">ALPHA WEAR</div>
+                        <div class="item-name">Джоггеры «Cargo Red Line»</div>
+                        <a href="product.html" class="btn-card-go">Открыть карточку</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
